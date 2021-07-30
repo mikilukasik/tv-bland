@@ -2,8 +2,8 @@ import { h } from 'preact';
 import { Router } from 'preact-router';
 
 // Code-splitting is automated for `routes` directory
-import Home from '../routes/home';
-import Shows from '../routes/shows';
+import Home from './home';
+import Shows from './shows';
 
 const App = () => (
 	<div id="app">

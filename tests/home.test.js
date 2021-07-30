@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import Home from '../src/routes/home';
+import Home from '../src/components/home';
 // See: https://github.com/preactjs/enzyme-adapter-preact-pure
 import { shallow } from 'enzyme';
 
