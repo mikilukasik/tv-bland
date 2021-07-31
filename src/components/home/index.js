@@ -21,9 +21,9 @@ const Home = () => {
 					Episode guide, cast, crew and character information.
 				</p>
 			</div>
-			<div>
+			<div class={style.showsContainer}>
 				<h2>Last Added Shows</h2>
-				<div class={style.showsContainer}>
+				<div class={style.showCardsContainer}>
 					{schedule.map(ShowCard)}
 				</div>
 			</div>

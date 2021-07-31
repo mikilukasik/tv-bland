@@ -1,9 +1,11 @@
 import { h } from 'preact';
-import style from './style.css';
+import style from './style.scss';
 
 const Header = () => (
 	<div class={style.header}>
-		<h1>TV Bland</h1>
+		<a href="/">
+			<h1>TV Bland</h1>
+		</a>
 	</div>
 );
 

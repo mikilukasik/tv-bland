@@ -1,10 +1,14 @@
 .home {
-	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
 }
 
 .showsContainer {
+	margin-top: 75px;
+}
+
+.showCardsContainer {
 	display: flex;
 	flex-wrap: wrap;
+  justify-content: space-between;
 }
