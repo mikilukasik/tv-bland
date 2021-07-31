@@ -15,12 +15,12 @@
 
   .name {
     grid-area: name;
-    color: #777;
+    color: #666;
   }
   
   .character {
     grid-area: character;
-    color: #777;
+    color: #666;
   }
 }
 
@@ -35,12 +35,12 @@
   
     .name {
       display: table-cell;
-      color: #777;
+      color: #666;
     }
     
     .character {
       display: table-cell;
-      color: #777;
+      color: #666;
     }
   }
 }

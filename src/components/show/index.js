@@ -7,11 +7,14 @@ import style from './style.css';
 
 // Note: `showId` comes from the URL, courtesy of our router
 const Show = ({ showId }) => {
-	const [show, setShow] = useState({});
+	const [show, setShow] = useState();
 
 	useEffect(() => {
 		getShow({ showId }).then(setShow);
-	}, [showId]);
+		document.title = `${show?.name} - TV Bland`;
+	}, [showId, show?.name]);
+
+	if (!show) return null;
 
 	return (
 		<div class={style.showContainer}>
