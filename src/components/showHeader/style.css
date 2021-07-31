@@ -1,0 +1,21 @@
+.showHeader {
+  display: grid;
+	grid-template-areas:
+		"image"
+		"mainInfo";
+}
+
+@media (min-width: 650px) {
+  .showHeader {
+    grid-template-areas:
+      "image mainInfo";
+  }
+}
+
+.showImageContainer {
+	grid-area: image;
+}
+
+.showMainInfo {
+	grid-area: mainInfo;
+}

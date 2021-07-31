@@ -14,7 +14,6 @@ const Home = () => {
 	return (
 		<div class={style.home}>
 			<div>
-				<h1>TV Bland</h1>
 				<p>
 					TV Show and web series database.
 					<br />
@@ -31,4 +30,5 @@ const Home = () => {
 		</div>
 	);
 };
+
 export default Home;

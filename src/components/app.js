@@ -1,16 +1,17 @@
 import { h } from 'preact';
 import { Router } from 'preact-router';
+import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from './home';
-import Shows from './shows';
+import Show from './show';
 
 const App = () => (
 	<div id="app">
+		<Header />
 		<Router>
-			<Home path="/" />
-			<Shows path="/shows/" />
-			<Shows path="/shows/:showId" />
+			<Show path="/shows/:showId" />
+			<Home default />
 		</Router>
 	</div>
 )

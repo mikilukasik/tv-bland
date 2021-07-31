@@ -1,0 +1,12 @@
+.showInfo {
+  display: grid;
+	grid-template-areas:
+		"streamedOn schedule"
+		"status genres";
+}
+
+@media (min-width: 650px) {
+  .showInfo {
+    display: table;
+  }
+}

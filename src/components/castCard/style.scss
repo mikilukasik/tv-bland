@@ -1,0 +1,46 @@
+.castCard {
+  padding: 2px;
+  display: grid;
+  grid-template-areas:
+    "image name"
+    "image character";
+
+  .image {
+    grid-area: image;
+    height: 70px;
+    width: 70px;
+    background-size: cover !important;
+    border-radius: 35px;
+  }
+
+  .name {
+    grid-area: name;
+    color: #777;
+  }
+  
+  .character {
+    grid-area: character;
+    color: #777;
+  }
+}
+
+@media (min-width: 650px) {
+  .castCard {
+    display: table-row;
+    height: 70px;
+  
+    .image {
+      display: table-cell;
+    }
+  
+    .name {
+      display: table-cell;
+      color: #777;
+    }
+    
+    .character {
+      display: table-cell;
+      color: #777;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.showCard {
+	margin: 15px 10px;
+	width: 210px;
+	transition: 0.2s all;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.showName {
+	font-weight: 600;
+	margin: 3px 0px;
+	color: #444;
+
+	&:hover {
+		color: black;
+		text-decoration: underline;
+	}
+}
+
+.episodeName {
+	font-size: 15px;
+	margin: 4px 0px 0px 0px;
+	color: #444;
+
+	&:hover {
+		color: black;
+		text-decoration: underline;
+	}
+}
+
+.showImageContainer {
+	width: 210px;
+	height: 295px;
+	margin-bottom: 5px;
+	background-color: #c9c9c9;
+	background-image: url(/assets/image-placeholder.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 200px;
+	
+	img {
+		width: 210px;
+		height: 295px;
+
+		&:hover {
+			border: 2px solid orange;
+		}
+	}
+}
