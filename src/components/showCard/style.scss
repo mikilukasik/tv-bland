@@ -32,13 +32,12 @@
 
 .showImageContainer {
 	width: 75vw;
-	// height: 295px;
 	margin-bottom: 5px;
 	background-color: #c9c9c9;
 	background-image: url(/assets/image-placeholder.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-  background-size: 75vw;
+  background-size: 200px;
 	
 	img {
 		width: 75vw;

@@ -1,6 +1,8 @@
 import { h } from 'preact';
 import ShowInfoCard from '../showInfoCard';
-import style from './style.css';
+import style from './style.scss';
+
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const getDays = ({ schedule: { days = [] } = {} }) => {
 	// days is an array of day names, this function converts it to a friendly string
@@ -8,6 +10,7 @@ const getDays = ({ schedule: { days = [] } = {} }) => {
 	switch (days.length) {
 		case 0: return '';
 		case 1: return `${days[0]}s`;
+		case 6: return `Daily except ${DAYS.find(day => !days.includes(day))}s`;
 		case 7: return 'Daily';
 		default:		
 	}

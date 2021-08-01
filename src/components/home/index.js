@@ -3,18 +3,21 @@ import style from './style.scss';
 import { useContext, useEffect, useState } from 'preact/hooks';
 import { getSchedule } from '../../controllers/apiController';
 import ShowCard from '../showCard';
-import { CountryContext } from '../app';
+import { ScheduleContext } from '../app';
+import CountrySelector from '../countrySelector';
 
 const Home = () => {
 	const [schedule, setSchedule] = useState([]);
-	const { country } = useContext(CountryContext);
+	const { country, date } = useContext(ScheduleContext);
 
 	useEffect(() => {
-		getSchedule({ country }).then(setSchedule);
-	}, [country]);
+		getSchedule({ country, date }).then(setSchedule);
+	}, [country, date]);
 
 	return (
 		<div class={style.home}>
+			<CountrySelector />
+
 			<div>
 				<p>
 					TV Show and web series database.

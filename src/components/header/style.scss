@@ -1,12 +1,21 @@
 .header {
 	color: #333;
-	
+
 	a {
 		text-decoration: none;
 		color: inherit;
 
 		&:hover {
 			color: black;
+			text-decoration: underline;
 		}
+	}
+}
+.active {
+	&:hover {
+		color: inherit !important;
+		text-decoration: inherit !important;
+		pointer-events: none;
+  	cursor: default;
 	}
 }

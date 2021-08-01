@@ -7,21 +7,24 @@ import Header from './header';
 import Home from './home';
 import Show from './show';
 
-export const CountryContext = createContext('country');
+export const ScheduleContext = createContext('schedule');
+
+const todaysDate = new Date().toISOString().split('T')[0];
 
 const App = () => {
-	const [country, setCountry] = useState('GB')
+	const [country, setCountry] = useState('GB');
+	const [date, setDate] = useState(todaysDate);
 
 	return (
 		<div id="app">
-			<CountryContext.Provider value={{ country, setCountry }}>
+			<ScheduleContext.Provider value={{ country, setCountry, date, setDate }}>
 				<Header />
 				
 				<Router>
 					<Show path="/shows/:showId" />
 					<Home default />
 				</Router>
-			</CountryContext.Provider>
+			</ScheduleContext.Provider>
 		</div>
 	);
 };

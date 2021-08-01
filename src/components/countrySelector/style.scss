@@ -1,5 +1,28 @@
-.countrySelector {
+.filterGroup {
 	position: absolute;
-	right: 64px;
-	top: 60px;
+    right: 60px;
+    top: 50px;
+    width: 45vw;
+    line-height: 30px;
+}
+
+.countrySelector {
+	padding-left: 10px;
+	float: right;
+
+	select {
+		border: 1px solid #ccc;
+		box-shadow: 1px 1px #e2cb8a;
+		height: 25px;
+	}
+}
+
+.dateSelector {
+	float: right;
+
+	input {
+		border: 1px solid #ccc;
+		box-shadow: 1px 1px #e2cb8a;
+		height: 25px;
+	}
 }

@@ -1,16 +1,14 @@
 import { h } from 'preact';
-import CountrySelector from '../countrySelector';
+import { Link } from 'preact-router/match';
 import style from './style.scss';
 
 const Header = () => (
 	<div class={style.header}>
 		<div>
-			<a href="/">
+			<Link activeClassName={style.active} href="/">
 				<h1>TV Bland</h1>
-			</a>
+			</Link>
 		</div>
-
-		<CountrySelector />
 	</div>
 );
 

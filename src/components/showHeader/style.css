@@ -5,13 +5,20 @@
 		"image"
 		"mainInfo";
   margin: 0 -1000px 0 -1000px;
-  padding: 0 1000px 0 1000px;
+  padding: 0 1000px 15px 1000px;
   background-color: #f3e4aa;
 }
 
 .showImageContainer {
 	grid-area: image;
   z-index: 1;
+  background-color: #c9c9c9;
+	background-image: url(/assets/image-placeholder.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 200px;
+  height: 295px;
+  width: 210px;
 }
 
 .showMainInfo {
@@ -24,6 +31,7 @@
   .showHeader {
     grid-template-areas:
       "image mainInfo";
+    grid-template-columns: 210px auto;
     margin: inherit;
     padding: inherit;
     background-color: inherit;
@@ -31,7 +39,7 @@
 
   .showMainInfo {
     margin: 0 -1000px 0 -1000px;
-    padding: 0 1000px 0 1000px;
+    padding: 0 1000px 15px 1000px;
     height: fit-content;
   }
 }
