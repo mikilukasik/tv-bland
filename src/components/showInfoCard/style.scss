@@ -1,5 +1,15 @@
 .showInfoCard {
   padding: 2px;
+  line-height: 30px;
+  margin-bottom: 30px;
+
+  div {
+    padding-right: 10px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   .label {
     font-weight: 500;
@@ -10,9 +20,10 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
   .showInfoCard {
     display: table-row;
+    border-bottom: 1px solid #ccc;
   
     .label {
       display: table-cell;

@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import ShowInfo from '../showInfo';
 import Cast from '../cast';
-import style from './style.css';
+import style from './style.scss';
 
 const ShowDetails = ({ show }) => (
 	<div class={style.showDetails}>

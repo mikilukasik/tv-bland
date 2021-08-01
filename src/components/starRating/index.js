@@ -10,7 +10,7 @@ const StarRating = ({ rating: { average } = {}, displayNumeric }) => {
 	return (
 		<div class={style.starRating}>
 			<div class={style.stars} style={`--rating: ${ratingRoundedToHalf};`} aria-label={`Rating of this show is ${rating} out of 5.`} />
-			{displayNumeric && average && <div class={style.numeric}>{rating}</div>}
+			{displayNumeric && average && <div class={style.numeric}>{rating} / 5</div>}
 		</div>
 	);
 }

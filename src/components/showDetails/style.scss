@@ -1,0 +1,22 @@
+.showDetails {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 50px;
+	grid-template-areas:
+		"info"
+		"cast";
+
+  div {
+    vertical-align: middle;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .showDetails {
+    grid-template-areas:
+      "info cast";
+    grid-gap: 70px;
+    
+  }
+}

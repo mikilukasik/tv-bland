@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import style from './style.css';
+import style from './style.scss';
 import { useEffect, useState } from 'preact/hooks';
 import { getSchedule } from '../../controllers/apiController';
 import ShowCard from '../showCard';

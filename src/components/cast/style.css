@@ -1,5 +1,21 @@
-@media (min-width: 650px) {
+
+.castHeader {
+  grid-area: header;
+  font-size: 22px !important;
+  font-weight: 600;
+  display: table-cell;
+  height: 50px;
+  padding-bottom: 28px;
+}
+
+
+
+@media (min-width: 900px) {
+  .castHeader {
+    padding-bottom: inherit;
+  }
   .cast {
     display: table;
+    border-collapse: collapse;
   }
 }

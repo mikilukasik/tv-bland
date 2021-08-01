@@ -1,21 +1,31 @@
 .castCard {
-  padding: 2px;
+  padding: 2px 0 20px 0;
   display: grid;
+  grid-template-columns: max-content;
   grid-template-areas:
     "image name"
     "image character";
 
-  .image {
+  .imageContainer {
     grid-area: image;
-    height: 70px;
-    width: 70px;
+    margin: 10px 0;
+    padding-right: 35px;
+  }
+
+  .image {
+    height: 50px;
+    width: 50px;
     background-size: cover !important;
     border-radius: 35px;
+    display: table-cell;
   }
 
   .name {
     grid-area: name;
     color: #666;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px 0 0;
   }
   
   .character {
@@ -24,10 +34,19 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
   .castCard {
     display: table-row;
-    height: 70px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .imageContainer {
+      padding-right: 0;
+    }
   
     .image {
       display: table-cell;
@@ -35,7 +54,8 @@
   
     .name {
       display: table-cell;
-      color: #666;
+      height: 70px;
+      padding: 0 20px 0 0;
     }
     
     .character {

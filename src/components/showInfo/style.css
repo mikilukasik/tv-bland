@@ -1,12 +1,22 @@
 .showInfo {
   display: grid;
 	grid-template-areas:
+    "header header"
 		"streamedOn schedule"
 		"status genres";
 }
 
-@media (min-width: 650px) {
+.showInfoHeader {
+  grid-area: header;
+  font-size: 22px !important;
+  font-weight: 600;
+  display: table-cell;
+  height: 50px;
+}
+
+@media (min-width: 900px) {
   .showInfo {
     display: table;
+    border-collapse: collapse;
   }
 }

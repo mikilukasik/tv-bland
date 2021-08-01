@@ -1,21 +1,37 @@
 .showHeader {
   display: grid;
+  grid-gap: 40px;
 	grid-template-areas:
 		"image"
 		"mainInfo";
+  margin: 0 -1000px 0 -1000px;
+  padding: 0 1000px 0 1000px;
+  background-color: #f3e4aa;
+}
+
+.showImageContainer {
+	grid-area: image;
+  z-index: 1;
+}
+
+.showMainInfo {
+  grid-area: mainInfo;
+  line-height: 20px;
+  background: #f3e4aa;
 }
 
 @media (min-width: 650px) {
   .showHeader {
     grid-template-areas:
       "image mainInfo";
+    margin: inherit;
+    padding: inherit;
+    background-color: inherit;
   }
-}
 
-.showImageContainer {
-	grid-area: image;
-}
-
-.showMainInfo {
-	grid-area: mainInfo;
+  .showMainInfo {
+    margin: 0 -1000px 0 -1000px;
+    padding: 0 1000px 0 1000px;
+    height: fit-content;
+  }
 }

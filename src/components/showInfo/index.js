@@ -45,6 +45,7 @@ const ShowInfo = ({ show }) => {
 
 	return (
 		<div class={style.showInfo}>
+			<div class={style.showInfoHeader}>Show Info</div>
 			<ShowInfoCard label="Streamed on" value={show.network?.name} />
 			{schedule && <ShowInfoCard label="Schedule" value={schedule} />}
 			<ShowInfoCard label="Status" value={show.status} />

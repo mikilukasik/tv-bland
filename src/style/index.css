@@ -17,6 +17,12 @@ html, body {
 
 #app {
 	height: 100%;
-	padding: 30px 60px;
-	background: linear-gradient(0deg, #fff 60%, #f3e4a9 60%);
+	padding: 30px 11vw;
+	background: linear-gradient(0deg, #fafafa 60%, #f3e4a9 60%);
+}
+
+@media (min-width: 570px) {
+	#app {
+		padding: 30px 60px;
+	}
 }
