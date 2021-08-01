@@ -1,15 +1,17 @@
 import { h } from 'preact';
 import style from './style.scss';
-import { useEffect, useState } from 'preact/hooks';
+import { useContext, useEffect, useState } from 'preact/hooks';
 import { getSchedule } from '../../controllers/apiController';
 import ShowCard from '../showCard';
+import { CountryContext } from '../app';
 
 const Home = () => {
 	const [schedule, setSchedule] = useState([]);
+	const { country } = useContext(CountryContext);
 
 	useEffect(() => {
-		getSchedule().then(setSchedule);
-	}, []);
+		getSchedule({ country }).then(setSchedule);
+	}, [country]);
 
 	return (
 		<div class={style.home}>
