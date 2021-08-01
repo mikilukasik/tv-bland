@@ -2,6 +2,11 @@
 
 A tv guide app utilizing the [TVMAZE API](https://www.tvmaze.com/api)
 
+## Preact
+
+The project is using the [PREACT framework](https://preactjs.com/)
+It is a small react alternative with notable performance benefits.
+
 ## CLI Commands
 
 ``` bash

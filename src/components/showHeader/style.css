@@ -17,8 +17,8 @@
 	background-repeat: no-repeat;
 	background-position: center;
   background-size: 200px;
-  height: 295px;
-  width: 210px;
+  height: 319px;
+  width: 240px;
 }
 
 .showMainInfo {
@@ -31,7 +31,7 @@
   .showHeader {
     grid-template-areas:
       "image mainInfo";
-    grid-template-columns: 210px auto;
+    grid-template-columns: 240px auto;
     margin: inherit;
     padding: inherit;
     background-color: inherit;

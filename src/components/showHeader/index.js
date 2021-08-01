@@ -7,7 +7,7 @@ import style from './style.css';
 const ShowHeader = ({ show }) => (
 	<div class={style.showHeader}>
 		<div class={style.showImageContainer}>
-			{show.image?.medium && <img src={show.image?.medium} alt={`image for ${show.name}`} width="210" height="295" />}
+			{show.image?.original && <img src={show.image?.original} alt={`image for ${show.name}`} width="240" height="319" />}
 		</div>
 		<div class={style.showMainInfo}>
 			<StarRating rating={show.rating} displayNumeric />
