@@ -1,5 +1,7 @@
 # togetherall-assignment
 
+A tv guide app utilizing the [TVMAZE API](https://www.tvmaze.com/api)
+
 ## CLI Commands
 
 ``` bash
@@ -14,6 +16,9 @@ npm run build
 
 # test the production build locally
 npm run serve
+
+# host the production build
+npm run host
 
 # run tests with jest and enzyme
 npm run test
